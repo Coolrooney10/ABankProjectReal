@@ -51,7 +51,7 @@ while program == True:
   
 
   print(' 1.Deposit\n 2.Withdraw\n 3.modify account\n 4.Check Balance\n 5.Delete Account\n 6.Exit')
-  options = input("Type a number corresponding to the use (1-6) ")
+  options = input("Type a number corresponding to the use (1-6):  ")
   if "1" in options:
     addedMoney = input("How much would you like to deposit")
     newAmount = int(amount) + int(addedMoney)
@@ -64,8 +64,8 @@ while program == True:
     print(f"You withdrew {moneyTaken}, and your new total is {newAmount}")
   elif "3" in options:
     createAccount()
-  elif options == 4:
-    print(newAmount)
+  elif "4" in options:
+    print(amount)
   elif "5" in options:
     delete = input("Are you sure? you won\'t be ableto get your account back.'")
     if delete == 'yes':
